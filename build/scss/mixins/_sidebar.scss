@@ -4,10 +4,23 @@
 
 // Sidebar Color
 @mixin sidebar-color($color) {
+  .brand-link{
+    background: $blue;
+  }
   .nav-sidebar > .nav-item {
-    & > .nav-link.active {
-      background-color: $color;
-      color: color-yiq($color);
+    & > .nav-link{
+      border-radius: 0;
+      &.active {
+        border-right: 5px solid lighten($color, 20%);
+        color: color-yiq($color);
+        background: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        &:hover{
+          background: $sidebar-dark-hover-bg;
+        }
+  
+      }
     }
   }
 

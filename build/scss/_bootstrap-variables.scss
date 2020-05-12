@@ -34,7 +34,7 @@ $grays: map-merge((
         "900": $gray-900
 ), $grays);
 
-$blue:    #007bff !default;
+$blue:    #367fa9 !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -236,6 +236,7 @@ $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lgt:                ($font-size-base * 1.7) !default;
 $font-size-lg:                ($font-size-base * 1.25) !default;
 $font-size-sm:                ($font-size-base * .875) !default;
 
@@ -601,7 +602,7 @@ $navbar-padding-x:                  ($spacer / 2) !default;
 
 $navbar-nav-link-padding-x:         1rem !default;
 
-$navbar-brand-font-size:            $font-size-lg !default;
+$navbar-brand-font-size:            $font-size-lgt !default;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
 $nav-link-height:                   ($font-size-base * $line-height-base + $nav-link-padding-y * 2) !default;
 $navbar-brand-height:               $navbar-brand-font-size * $line-height-base !default;

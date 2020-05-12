@@ -34,6 +34,10 @@
       margin: 0;
     }
 
+    .btn{
+      border: none;
+    }
+
     &[class*='-right'] {
       .dropdown-menu {
         left: auto;

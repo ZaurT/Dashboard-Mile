@@ -24,6 +24,10 @@
   padding-left: $sidebar-padding-x;
   padding-right: $sidebar-padding-x;
   padding-top: $sidebar-padding-y;
+
+  .os-content{
+    padding: 0 !important;
+  }
 }
 
 // Sidebar user panel
