@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>MILE | Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- selectpicker -->
+  <link rel="stylesheet" href="plugins/bootstrap-select/css/bootstrap-select.min.css">
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
   <!-- Google Font: Source Sans Pro -->
@@ -46,7 +48,7 @@
     </div>
     <ul class="navbar-nav mr-3">
       <li class="nav-item">
-        <button type="button" class="btn btn-block btn-default btn-sm">Выход</button>
+        <button type="button" class="btn btn-block btn-default btn-sm">Logout</button>
       </li>
     </ul>
   </nav>
@@ -602,64 +604,84 @@
         <div class="row">
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>150</h3>
-
-                <p>New Orders</p>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4 bg-info d-flex justify-content-center align-items-center">
+                  <h4 class="mb-0">503</h4>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text text-muted mb-0">Received at</p>
+                    <select class="selectpicker" data-style="btn-link">
+                      <option>all SCDs</option>
+                      <option>Ketchup</option>
+                      <option>Relish</option>
+                    </select>
+                  </div>
+                </div>
               </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
-          <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-                <p>Bounce Rate</p>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4 bg-purple d-flex justify-content-center align-items-center">
+                  <h4 class="mb-0">401</h4>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text text-muted mb-0">Sent to ELGA PIX at</p>
+                    <select class="selectpicker" data-style="btn-link">
+                      <option>BMW.ru TDR</option>
+                      <option>Ketchup</option>
+                      <option>Relish</option>
+                    </select>
+                  </div>
+                </div>
               </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
-          <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-warning">
-              <div class="inner">
-                <h3>44</h3>
-
-                <p>User Registrations</p>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4 bg-green d-flex justify-content-center align-items-center">
+                  <h4 class="mb-0">404</h4>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text text-muted mb-0">Sent to FourDB at</p>
+                    <select class="selectpicker" data-style="btn-link">
+                      <option>Twitter digital form</option>
+                      <option>Ketchup</option>
+                      <option>Relish</option>
+                    </select>
+                  </div>
+                </div>
               </div>
-              <div class="icon">
-                <i class="ion ion-person-add"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
-          <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>65</h3>
-
-                <p>Unique Visitors</p>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4 bg-yellow d-flex justify-content-center align-items-center">
+                  <h4 class="mb-0">503</h4>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text text-muted mb-0">Received at</p>
+                    <select class="selectpicker" data-style="btn-link">
+                      <option>all SCDs</option>
+                      <option>Ketchup</option>
+                      <option>Relish</option>
+                    </select>
+                  </div>
+                </div>
               </div>
-              <div class="icon">
-                <i class="ion ion-pie-graph"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
-          <!-- ./col -->
         </div>
         <!-- /.row -->
         <!-- Main row -->
@@ -1224,6 +1246,8 @@
 <!-- daterangepicker -->
 <script src="plugins/moment/moment.min.js"></script>
 <script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- selectpicker -->
+<script src="plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
 <!-- Tempusdominus Bootstrap 4 -->
 <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Summernote -->
@@ -1236,5 +1260,7 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+
+
 </body>
 </html>

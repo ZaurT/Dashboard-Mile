@@ -1,0 +1,30 @@
+//
+// Component: Select
+//
+
+.bootstrap-select .selectpicker[data-style=btn-link] + .btn {
+    width: auto;
+    padding: 0;
+    text-decoration: underline;
+
+    &:focus{
+        outline: none !important;
+    }
+
+    &:after{
+        border-top: 0.2em solid;
+        border-right: 0.2em solid transparent;
+        border-left: 0.2em solid transparent;
+    }
+}
+
+.dropup .dropdown-toggle::after {
+    border-top: 0px !important;
+    border-right: 0.2em solid transparent;
+    border-bottom: 0.2em solid !important;
+    border-left: 0.2em solid transparent !important;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+    width: auto !important;
+}

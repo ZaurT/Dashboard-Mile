@@ -22,6 +22,11 @@
   }
 }
 
+.dropdown-item.active:hover, .dropdown-item:active:hover,
+.dropdown-item.active:focus, .dropdown-item:active:focus{
+  color: #fff;
+}
+
 .dropdown-item-title {
   font-size: $font-size-base;
   margin: 0;
