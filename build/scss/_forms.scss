@@ -275,3 +275,7 @@ textarea.form-control {
     @include custom-range-variant($name, $color);
   }
 }
+
+.pointer{
+  cursor: pointer;
+}

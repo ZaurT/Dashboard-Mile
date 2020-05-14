@@ -36,7 +36,7 @@ $grays: map-merge((
 
 $blue:    #367fa9 !default;
 $indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
+$purple:  #605ca8 !default;
 $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
@@ -309,6 +309,8 @@ $table-bg:                    transparent !default;
 $table-accent-bg:             rgba($black, .05) !default;
 $table-hover-bg:              rgba($black, .075) !default;
 $table-active-bg:             $table-hover-bg !default;
+$table-row-select-bg:         rgba(0, 0, 0, 0.08) !default;
+$table-row-select-text:       rgb(33, 37, 41) !default;
 
 $table-border-width:          $border-width !default;
 $table-border-color:          $gray-300 !default;
@@ -442,7 +444,7 @@ $form-check-input-margin-x:             .25rem !default;
 $form-check-inline-margin-x:            .75rem !default;
 $form-check-inline-input-margin-x:      .3125rem !default;
 
-$form-group-margin-bottom:              1rem !default;
+$form-group-margin-bottom:              .3rem !default;
 
 $input-group-addon-color:               $input-color !default;
 $input-group-addon-bg:                  $gray-200 !default;
@@ -667,7 +669,8 @@ $jumbotron-bg:                      $gray-200 !default;
 
 $card-spacer-y:                     .75rem !default;
 $card-spacer-x:                     1.25rem !default;
-$card-border-width:                 0 !default; //$border-width !default;
+$card-border-width:                 0px !default; //$border-width !default;
+$card-footer-border-width:          1px !default;
 $card-border-radius:                $border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;

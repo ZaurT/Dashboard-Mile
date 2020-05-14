@@ -248,6 +248,12 @@ html.maximized-card {
   clear: both;
 }
 
+// Box footer
+
+.card-footer{
+  border-top-width: $card-footer-border-width;
+}
+
 
 // Box Tools Buttons
 .btn-tool {

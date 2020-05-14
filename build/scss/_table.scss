@@ -71,4 +71,50 @@
       }
     }
   }
+
+  &.dataTable{
+
+    & tr td.select-checkbox:before{
+      width: 15px;
+      height: 15px;
+      top: 1.15em;
+      border-color: #717171 !important;
+    }
+
+    & tr.selected td.select-checkbox:after{
+      content: '\2714';
+      color: #000;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: -11px;
+      text-shadow: 1px 1px $table-row-select-bg, -1px -1px $table-row-select-bg, 1px -1px $table-row-select-bg, -1px 1px $table-row-select-bg;
+    }
+    
+  }
+
+  &.dataTable tbody>tr.selected, 
+  &.dataTable tbody>tr>.selected{
+    background-color: $table-row-select-bg;
+    color: $table-row-select-text;
+  }
+
+  &.dataTable {
+      margin-top: 0 !important;
+      
+      th{
+        border-top: none;
+      }
+
+      th, td{
+        padding: 0.45rem;
+      }
+  }
+}
+
+.dataTables_wrapper > div.row > div[class^="col-"]{
+  &:first-child .dataTables_info{
+    padding-left: 0.45rem !important;
+  }
+  &:last-child .dataTables_paginate{
+    padding-right: 0.45rem !important;
+  }
 }

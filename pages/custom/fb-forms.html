@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>MILE | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bbootstrap 4 -->
+  <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="../../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="../../plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="../../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker.css">
+  <!-- selectpicker -->
+  <link rel="stylesheet" href="../../plugins/bootstrap-select/css/bootstrap-select.min.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-select/css/select.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-lightblue navbar-dark">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+    <div class="user-panel d-flex ml-auto navbar-nav">
+      <div class="image">
+        <img src="../../dist/img/user9-128x128.png" class="img-circle" alt="User Image">
+      </div>
+      <a href="#" class="d-block nav-link">Ivan Ivanov</a>
+    </div>
+    <ul class="navbar-nav mr-3">
+      <li class="nav-item">
+        <button type="button" class="btn btn-block btn-default btn-sm">Logout</button>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link text-center">
+      <span class="logo-lg"><b>MILE</b></span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="./../../index.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="nav-header">FACEBOOK</li>
+          <li class="nav-item">
+            <a href="./fb-leads.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Leads</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./fb-forms.html" class="nav-link active">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Forms</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./fb-pages.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Pages</p>
+            </a>
+          </li>
+          <li class="nav-header">ВКОНТАКТЕ</li>
+          <li class="nav-item">
+            <a href="./vk-leads.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Leads</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./vk-forms.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Forms</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./vk-groups.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Groups</p>
+            </a>
+          </li>
+          <li class="nav-header">WFP</li>
+          <li class="nav-item">
+            <a href="./wfp-leads.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Leads</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./wfp-forms.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Forms</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./wfp-campaigns.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Campaigns</p>
+            </a>
+          </li>
+          <li class="nav-header">XML RECEIVER</li>
+          <li class="nav-item">
+            <a href="./xml-api.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>API Token’s</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./xml-logs.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Logs</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4 class="m-0 text-dark">Facebook Forms</h4>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard v1</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <!-- small box -->
+            <div class="card card-default collapsed-card card-outline card-info">
+              <div class="card-header">
+                <h3 class="card-title">Filters</h3>
+    
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="form-group"> 
+                      <label>Id</label>
+                      <input type="text" class="form-control">
+                    </div> 
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group"> 
+                      <label>Type</label>
+                      <select class="form-control select2">
+                        <option>All</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group"> 
+                        <label for="exampleInputName">Source</label>
+                        <select class="form-control select2">
+                          <option>All</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                      </div> 
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group"> 
+                      <label>Campaign Name</label>
+                      <select class="form-control select2">
+                        <option>All</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                      </select>
+                    </div> 
+                  </div>
+                  <div class="col-lg-4">
+                      <div class="form-group"> 
+                        <label>Car Brand</label>
+                        <select class="form-control select2">
+                          <option>All</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                      </div>
+                  </div> 
+                  <div class="col-lg-4">
+                    <div class="form-group"> 
+                      <label>Car Model</label>
+                      <select class="form-control select2">
+                        <option>All</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                      </select>
+                    </div>
+                </div> 
+                  <div class="col-lg-4">
+                    <div class="form-group"> 
+                      <label>Added</label>
+                      <div class="input-group date" id="added" data-target-input="nearest">
+                        <div class="input-group-prepend" data-target="#added" data-toggle="datetimepicker">
+                          <span class="input-group-text">
+                            <i class="far fa-calendar-alt"></i>
+                          </span>
+                        </div>
+                        <div class="input-group-prepend pointer" data-target="#added" data-action="datetimeclear">
+                          <span class="input-group-text">
+                            <i class="fas fa-times"></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control float-right datetimepicker-input" data-toggle="datetimepicker" data-target="#added">
+                      </div>
+                    </div> 
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer">
+                <div class="form-group text-right mb-0">
+                  <a href="#" type="submit" class="btn btn-success mr-15" data-card-widget="collapse">Apply</a>
+                  <a href="#" type="submit" class="btn btn-default" data-card-widget="collapse">Clear</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-default card-outline card-info">
+              <div class="card-header">
+                <h3 class="card-title">Actions</h3>
+              </div>
+              <div class="card-footer border-0">
+                <div class="form-group mb-0">
+                  <a href="#" type="submit" class="btn btn-success mr-2" data-card-widget="collapse">Add</a>
+                  <a href="#" type="submit" class="btn btn-success mr-2" data-card-widget="collapse">Add</a>
+                  <a href="#" type="submit" class="btn btn-default" data-card-widget="collapse">Disable</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-default">
+              <div class="card-header">
+                <h3 class="card-title">Forms</h3>
+              </div>
+              <div class="card-body table-responsive p-0">
+                <table id="example1" class="table table-hover text-nowrap">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Status</th>
+                      <th>Type</th>
+                      <th>Source</th>
+                      <th>Campaign Name</th>
+                      <th>Car Brand</th>
+                      <th>Car Model</th>
+                      <th>Last Lead</th>
+                      <th>Leads</th>
+                      <th>Added</th>
+                      <th class="select-checkbox"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>3643273856239239</td>
+                      <td class="text-center"><span class="badge bg-green text-uppercase">Active</span></td>
+                      <td>TDR</td>
+                      <td>BMW FB digital form</td>
+                      <td>X7 медиа кампания</td>
+                      <td>BMW</td>
+                      <td>BMW X7 G07</td>
+                      <td>2019-09-11 17:52:25</td>
+                      <td><a href="#">15</a></td>
+                      <td>2019-09-11 17:52:25</td>
+                      <td class="select-checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>3643273856239239</td>
+                      <td class="text-center"><span class="badge bg-red text-uppercase">IDLE</span></td>
+                      <td>TDR</td>
+                      <td>BMW FB digital form</td>
+                      <td>X7 медиа кампания</td>
+                      <td>BMW</td>
+                      <td>BMW X7 G07</td>
+                      <td>2019-09-11 17:52:25</td>
+                      <td><a href="#">15</a></td>
+                      <td>2019-09-11 17:52:25</td>
+                      <td class="select-checkbox"></td>
+                    </tr>
+                      <tr>
+                        <td>3643273856239239</td>
+                        <td class="text-center"><span class="badge bg-green text-uppercase">Active</span></td>
+                        <td>TDR</td>
+                        <td>BMW FB digital form</td>
+                        <td>X7 медиа кампания</td>
+                        <td>BMW</td>
+                        <td>BMW X7 G07</td>
+                        <td>2019-09-11 17:52:25</td>
+                        <td><a href="#">15</a></td>
+                        <td>2019-09-11 17:52:25</td>
+                        <td class="select-checkbox"></td>
+                      </tr>
+                      <tr>
+                        <td>3643273856239239</td>
+                        <td class="text-center"><span class="badge bg-green text-uppercase">Active</span></td>
+                        <td>TDR</td>
+                        <td>BMW FB digital form</td>
+                        <td>X7 медиа кампания</td>
+                        <td>BMW</td>
+                        <td>BMW X7 G07</td>
+                        <td>2019-09-11 17:52:25</td>
+                        <td><a href="#">15</a></td>
+                        <td>2019-09-11 17:52:25</td>
+                        <td class="select-checkbox"></td>
+                      </tr>
+                      <tr>
+                        <td>3643273856239239</td>
+                        <td class="text-center"><span class="badge bg-green text-uppercase">Active</span></td>
+                        <td>TDR</td>
+                        <td>BMW FB digital form</td>
+                        <td>X7 медиа кампания</td>
+                        <td>BMW</td>
+                        <td>BMW X7 G07</td>
+                        <td>2019-09-11 17:52:25</td>
+                        <td><a href="#">15</a></td>
+                        <td>2019-09-11 17:52:25</td>
+                        <td class="select-checkbox"></td>
+                      </tr>
+                      <tr>
+                        <td>3643273856239239</td>
+                        <td class="text-center"><span class="badge bg-green text-uppercase">Active</span></td>
+                        <td>TDR</td>
+                        <td>BMW FB digital form</td>
+                        <td>X7 медиа кампания</td>
+                        <td>BMW</td>
+                        <td>BMW X7 G07</td>
+                        <td>2019-09-11 17:52:25</td>
+                        <td><a href="#">15</a></td>
+                        <td>2019-09-11 17:52:25</td>
+                        <td class="select-checkbox"></td>
+                      </tr>
+                      <tr>
+                        <td>3643273856239239</td>
+                        <td class="text-center"><span class="badge bg-green text-uppercase">Active</span></td>
+                        <td>TDR</td>
+                        <td>BMW FB digital form</td>
+                        <td>X7 медиа кампания</td>
+                        <td>BMW</td>
+                        <td>BMW X7 G07</td>
+                        <td>2019-09-11 17:52:25</td>
+                        <td><a href="#">15</a></td>
+                        <td>2019-09-11 17:52:25</td>
+                        <td class="select-checkbox"></td>
+                      </tr>
+                      <tr>
+                        <td>3643273856239239</td>
+                        <td class="text-center"><span class="badge bg-green text-uppercase">Active</span></td>
+                        <td>TDR</td>
+                        <td>BMW FB digital form</td>
+                        <td>X7 медиа кампания</td>
+                        <td>BMW</td>
+                        <td>BMW X7 G07</td>
+                        <td>2019-09-11 17:52:25</td>
+                        <td><a href="#">15</a></td>
+                        <td>2019-09-11 17:52:25</td>
+                        <td class="select-checkbox"></td>
+                      </tr>
+                    </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="../../plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Select2 -->
+<script src="../../plugins/select2/js/select2.full.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="../../plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="../../plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="../../plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="../../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="../../plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="../../plugins/moment/moment.min.js"></script>
+<script src="../../plugins/daterangepicker/daterangepicker.js"></script>
+<!-- selectpicker -->
+<script src="../../plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="../../plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="../../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="../../dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<!-- DataTables -->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-select/js/dataTables.select.min.js"></script>
+<script src="../../plugins/datatables-select/js/select.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+
+
+<script>
+  $(function () {
+      //Initialize Select2 Elements
+      $('.select2').select2()
+
+      //Initialize Select2 Elements
+      $('.select2bs4').select2({
+        theme: 'bootstrap4'
+      })
+
+      //Timepicker
+      $('#added').datetimepicker({
+        defaultDate: moment()
+      });
+
+      $('[data-action="datetimeclear"]').on('click', function(){
+        $(this).next('.datetimepicker-input').val('');
+      });
+  });
+</script>
+<script>
+   $(function () {
+      let example = $('#example1').DataTable({
+        'paging'      : true,
+        'lengthChange': false,
+        'searching'   : false,
+        'ordering'    : false,
+        'info'        : true,
+        'autoWidth'   : true,
+        'select': true,
+        'language': {
+          paginate: {
+            next: '»', // or '→'
+            previous: '«' // or '←' 
+          }
+        },
+        'columnDefs': [ {
+            className: 'select-checkbox',
+            targets:   -1
+        } ],
+      })
+      
+    })
+</script>
+
+
+</body>
+</html>
