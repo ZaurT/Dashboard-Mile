@@ -100,6 +100,10 @@ label:not(.form-check-label):not(.custom-file-label) {
   font-weight: $font-weight-bold;
 }
 
+label{
+  margin-bottom: $label-margin-bottom;
+}
+
 .warning-feedback {
   @include font-size($form-feedback-font-size);
   color: theme-color('warning');

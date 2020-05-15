@@ -89,7 +89,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="./fb-forms.html" class="nav-link active">
+            <a href="./fb-forms.html" class="nav-link">
               <i class="far fa-circle nav-icon"></i>
               <p>Forms</p>
             </a>
@@ -121,7 +121,7 @@
           </li>
           <li class="nav-header">WFP</li>
           <li class="nav-item">
-            <a href="./wfp-leads.html" class="nav-link">
+            <a href="./wfp-leads.html" class="nav-link active">
               <i class="far fa-circle nav-icon"></i>
               <p>Leads</p>
             </a>
@@ -165,7 +165,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-6">
-            <h4 class="m-0 text-dark">Facebook Forms</h4>
+            <h4 class="m-0 text-dark">WFP Leads</h4>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -197,13 +197,7 @@
                 <div class="row">
                   <div class="col-lg-4">
                     <div class="form-group"> 
-                      <label>Id</label>
-                      <input type="text" class="form-control">
-                    </div> 
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="form-group"> 
-                      <label>Type</label>
+                      <label>Campaign</label>
                       <select class="form-control select2">
                         <option>All</option>
                         <option>Option 1</option>
@@ -211,6 +205,28 @@
                         <option>Option 3</option>
                       </select>
                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group"> 
+                        <label for="exampleInputName">Status</label>
+                        <select class="form-control select2">
+                          <option>All</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                      </div> 
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group"> 
+                        <label for="exampleInputName">Type</label>
+                        <select class="form-control select2">
+                          <option>All</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                      </div> 
                   </div>
                   <div class="col-lg-4">
                     <div class="form-group"> 
@@ -225,52 +241,41 @@
                   </div>
                   <div class="col-lg-4">
                     <div class="form-group"> 
-                      <label>Campaign Name</label>
-                      <select class="form-control select2">
-                        <option>All</option>
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                      </select>
-                    </div> 
-                  </div>
-                  <div class="col-lg-4">
-                      <div class="form-group"> 
-                        <label>Car Brand</label>
+                        <label for="exampleInputName">Campaing Name</label>
                         <select class="form-control select2">
                           <option>All</option>
                           <option>Option 1</option>
                           <option>Option 2</option>
                           <option>Option 3</option>
                         </select>
-                      </div>
-                  </div> 
+                      </div> 
+                  </div>
                   <div class="col-lg-4">
                     <div class="form-group"> 
-                      <label>Car Model</label>
-                      <select class="form-control select2">
-                        <option>All</option>
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                      </select>
-                    </div>
-                </div> 
+                        <label for="exampleInputName">Car Brand</label>
+                        <select class="form-control select2">
+                          <option>All</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                      </div> 
+                  </div>
                   <div class="col-lg-4">
                     <div class="form-group"> 
-                      <label>Added</label>
-                      <div class="input-group date" id="added" data-target-input="nearest">
-                        <div class="input-group-prepend" data-target="#added" data-toggle="datetimepicker">
-                          <span class="input-group-text">
-                            <i class="far fa-calendar-alt"></i>
-                          </span>
-                        </div>
-                        <div class="input-group-prepend pointer" data-target="#added" data-action="datetimeclear">
-                          <span class="input-group-text">
-                            <i class="fas fa-times"></i>
-                          </span>
-                        </div>
-                        <input type="text" class="form-control float-right datetimepicker-input" data-toggle="datetimepicker" data-target="#added">
-                      </div>
+                        <label for="exampleInputName">Car Model</label>
+                        <select class="form-control select2">
+                          <option>All</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                      </div> 
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group"> 
+                      <label>Dealer ID</label>
+                      <input placeholder="Enter Dealder ID" type="text" class="form-control">
                     </div> 
                   </div>
                   <!-- /.col -->
@@ -280,7 +285,7 @@
               <!-- /.card-body -->
               <div class="card-footer">
                 <div class="form-group text-right mb-0">
-                  <a href="#" type="submit" class="btn btn-success mr-15" data-card-widget="collapse">Apply</a>
+                  <a href="#" type="submit" class="btn btn-default mr-15" data-card-widget="collapse">Apply</a>
                   <a href="#" type="submit" class="btn btn-default" data-card-widget="collapse">Clear</a>
                 </div>
               </div>
@@ -296,9 +301,8 @@
               </div>
               <div class="card-footer border-0">
                 <div class="form-group mb-0">
-                  <a href="#" type="submit" class="btn btn-success mr-2">Add</a>
-                  <a href="#" type="submit" class="btn btn-success mr-2">Activate</a>
-                  <a href="#" type="submit" class="btn btn-default">Disable</a>
+                  <a href="#" type="submit" class="btn btn-default">Resend</a>
+                  <a href="#" type="submit" class="btn btn-danger">Delete</a>
                 </div>
               </div>
             </div>
@@ -308,129 +312,49 @@
           <div class="col-12">
             <div class="card card-default">
               <div class="card-header">
-                <h3 class="card-title">Forms</h3>
+                <h3 class="card-title">Campaing</h3>
               </div>
               <div class="card-body table-responsive p-0">
                 <table id="example1" class="table table-hover text-nowrap">
                   <thead>
                     <tr>
                       <th>#</th>
+                      <th>Name</th>
+                      <th>Phone</th>
+                      <th>Email</th>
                       <th>Status</th>
-                      <th>Type</th>
-                      <th>Source</th>
-                      <th>Campaign Name</th>
-                      <th>Car Brand</th>
-                      <th>Car Model</th>
-                      <th>Last Lead</th>
-                      <th>Leads</th>
-                      <th>Added</th>
+                      <th>Created</th>
                       <th class="select-checkbox"></th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                      <td>3643273856239239</td>
-                      <td class="text-center"><span class="badge bg-green text-uppercase">Active</span></td>
-                      <td>TDR</td>
-                      <td>BMW FB digital form</td>
-                      <td>X7 медиа кампания</td>
-                      <td>BMW</td>
-                      <td>BMW X7 G07</td>
-                      <td>2019-09-11 17:52:25</td>
-                      <td><a href="#">15</a></td>
+                      <td>109</td>
+                      <td>Паша Первый</td>
+                      <td>roman.tnv@yandex.ru</td>
+                      <td>9697659219</td>
+                      <td>Idle</td>
                       <td>2019-09-11 17:52:25</td>
                       <td class="select-checkbox"></td>
                     </tr>
                     <tr>
-                      <td>3643273856239239</td>
-                      <td class="text-center"><span class="badge bg-red text-uppercase">IDLE</span></td>
-                      <td>TDR</td>
-                      <td>BMW FB digital form</td>
-                      <td>X7 медиа кампания</td>
-                      <td>BMW</td>
-                      <td>BMW X7 G07</td>
-                      <td>2019-09-11 17:52:25</td>
-                      <td><a href="#">15</a></td>
-                      <td>2019-09-11 17:52:25</td>
-                      <td class="select-checkbox"></td>
-                    </tr>
-                      <tr>
-                        <td>3643273856239239</td>
-                        <td class="text-center"><span class="badge bg-green text-uppercase">Active</span></td>
-                        <td>TDR</td>
-                        <td>BMW FB digital form</td>
-                        <td>X7 медиа кампания</td>
-                        <td>BMW</td>
-                        <td>BMW X7 G07</td>
-                        <td>2019-09-11 17:52:25</td>
-                        <td><a href="#">15</a></td>
+                        <td>108</td>
+                        <td>Даша Вторая</td>
+                        <td>roman.tnv@yandex.ru</td>
+                        <td>9697659219</td>
+                        <td>Sent</td>
                         <td>2019-09-11 17:52:25</td>
                         <td class="select-checkbox"></td>
                       </tr>
                       <tr>
-                        <td>3643273856239239</td>
-                        <td class="text-center"><span class="badge bg-green text-uppercase">Active</span></td>
-                        <td>TDR</td>
-                        <td>BMW FB digital form</td>
-                        <td>X7 медиа кампания</td>
-                        <td>BMW</td>
-                        <td>BMW X7 G07</td>
-                        <td>2019-09-11 17:52:25</td>
-                        <td><a href="#">15</a></td>
-                        <td>2019-09-11 17:52:25</td>
-                        <td class="select-checkbox"></td>
-                      </tr>
-                      <tr>
-                        <td>3643273856239239</td>
-                        <td class="text-center"><span class="badge bg-green text-uppercase">Active</span></td>
-                        <td>TDR</td>
-                        <td>BMW FB digital form</td>
-                        <td>X7 медиа кампания</td>
-                        <td>BMW</td>
-                        <td>BMW X7 G07</td>
-                        <td>2019-09-11 17:52:25</td>
-                        <td><a href="#">15</a></td>
-                        <td>2019-09-11 17:52:25</td>
-                        <td class="select-checkbox"></td>
-                      </tr>
-                      <tr>
-                        <td>3643273856239239</td>
-                        <td class="text-center"><span class="badge bg-green text-uppercase">Active</span></td>
-                        <td>TDR</td>
-                        <td>BMW FB digital form</td>
-                        <td>X7 медиа кампания</td>
-                        <td>BMW</td>
-                        <td>BMW X7 G07</td>
-                        <td>2019-09-11 17:52:25</td>
-                        <td><a href="#">15</a></td>
-                        <td>2019-09-11 17:52:25</td>
-                        <td class="select-checkbox"></td>
-                      </tr>
-                      <tr>
-                        <td>3643273856239239</td>
-                        <td class="text-center"><span class="badge bg-green text-uppercase">Active</span></td>
-                        <td>TDR</td>
-                        <td>BMW FB digital form</td>
-                        <td>X7 медиа кампания</td>
-                        <td>BMW</td>
-                        <td>BMW X7 G07</td>
-                        <td>2019-09-11 17:52:25</td>
-                        <td><a href="#">15</a></td>
-                        <td>2019-09-11 17:52:25</td>
-                        <td class="select-checkbox"></td>
-                      </tr>
-                      <tr>
-                        <td>3643273856239239</td>
-                        <td class="text-center"><span class="badge bg-green text-uppercase">Active</span></td>
-                        <td>TDR</td>
-                        <td>BMW FB digital form</td>
-                        <td>X7 медиа кампания</td>
-                        <td>BMW</td>
-                        <td>BMW X7 G07</td>
-                        <td>2019-09-11 17:52:25</td>
-                        <td><a href="#">15</a></td>
-                        <td>2019-09-11 17:52:25</td>
-                        <td class="select-checkbox"></td>
+                          
+                          <td>107</td>
+                          <td>Маша Четвертая</td>
+                          <td>roman.tnv@yandex.ru</td>
+                          <td>9697659219</td>
+                          <td class="text-danger">Error (2)</td>
+                          <td>2019-09-11 17:52:25</td>
+                          <td class="select-checkbox"></td>
                       </tr>
                     </tbody>
                 </table>
@@ -512,7 +436,7 @@
       })
 
       //Timepicker
-      $('#added').datetimepicker({
+      $('#recieved').datetimepicker({
         defaultDate: moment()
       });
 
@@ -527,7 +451,7 @@
         'paging'      : true,
         'lengthChange': false,
         'searching'   : false,
-        'ordering'    : false,
+        'ordering'    : true,
         'info'        : true,
         'autoWidth'   : true,
         'select': true,
